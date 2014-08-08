@@ -21,6 +21,12 @@
      for different hardware and product builds. -->
 <resources>
 
+    <!-- Control whether being in the desk dock should enable accelerometer
+         based screen orientation.  This defaults to true because it is
+         common for desk docks to be sold in a variety of form factors
+         with different orientations.  Since we cannot always tell these docks
+         apart and the docks cannot report their true orientation on their own,
+         we rely on gravity to determine the effective orientation. -->
     <bool name="config_deskDockEnablesAccelerometer">false</bool>
 
     <!-- Default color for notification LED is white. -->
@@ -168,6 +174,9 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
+    <!-- Does the notification LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
@@ -247,18 +256,11 @@
 
     <bool name="config_enableWifiDisplay">true</bool>
 
-    <!-- Panel auto-brightness configuration value -->
-    <integer name="config_panelAutoBrightnessValue">1</integer>
-
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
-
-    <!-- Performance profiles -->
-    <string name="config_perf_profile_prop">sys.perf.profile</string>
-    <string name="config_perf_profile_default_entry">1</string>
+    <!-- Device supports LED flashlight
+    <bool name="config_enableTorch">true</bool> -->
 
     <!-- Base "touch slop" value used by ViewConfiguration as a
-         movement threshold where scrolling should begin. -->
-    <dimen name="config_viewConfigurationTouchSlop">4dp</dimen>
+         movement threshold where scrolling should begin.
+    <dimen name="config_viewConfigurationTouchSlop">4dp</dimen> -->
 
 </resources>
