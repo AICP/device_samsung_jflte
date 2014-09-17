@@ -10,6 +10,11 @@
     "branch":      "kitkat"
   },
   {
+    "repository": "AICP/device_samsung_jf-common",
+    "target_path": "device/samsung/jf-common",
+    "branch":      "kitkat"
+  },
+  {
     "repository":  "CyanogenMod/android_hardware_qcom_display-caf",
     "target_path": "hardware/qcom/display-caf",
     "branch":      "cm-11.0"
